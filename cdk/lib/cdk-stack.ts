@@ -8,7 +8,7 @@ export class CdkStack extends cdk.Stack {
 
     new StaticSite(this, "StaticSite", {
       domainName: "matthewpagan.com",
-      siteSubDomain: "example",
+      siteSubDomain: "noahs-card",
     });
   }
 }
