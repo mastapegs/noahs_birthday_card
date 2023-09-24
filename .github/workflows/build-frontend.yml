@@ -1,0 +1,25 @@
+name: Build Frontend
+
+on:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Change directory to frontend
+        run: |
+          cd frontend
+        
+      - name: NPM install
+        working-directory: ./frontend
+        run: |
+          npm ci
+
+      - name: Run build
+        working-directory: ./frontend
+        run: |
+          npm run build
