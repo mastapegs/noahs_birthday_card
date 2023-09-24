@@ -5,6 +5,7 @@ body, html {
 
 body {
   background-image: url("./assets/roblox_background.jpg");
+  object-fit: cover;
 }
 
 * {
