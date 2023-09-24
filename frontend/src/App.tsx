@@ -1,34 +1,19 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
+import styles from "./App.module.css";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
+      <div className={styles.container}>
+        <h1>Hello Noah!</h1>
+        <p>I love you so much!</p>
         <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
+          I wanted to let you know that you'll be getting Robux every single
+          month for an entire year as part of your birthday present.
         </p>
+        <p>Don't spend it all in one obby!</p>
+        <p>Love,</p>
+        <p>Mommy and Daddy</p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-      <p>Deployed via AWS CDK</p>
     </>
   );
 }
