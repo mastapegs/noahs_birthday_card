@@ -19,7 +19,7 @@ function App() {
           <p>Don't spend it all in one obby!</p>
           <p>Love,</p>
           <p>Mommy and Daddy</p>
-          <img src="./src/assets/noah.png" />
+          <img src="./public/noah.png" />
         </div>
       </div>
     </>
